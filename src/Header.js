@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { useStateValue } from './StateProvider';
-import { auth } from 'firebase';
+import { auth } from './firebase'; 
+
 
 function Header() {
     const[{ Cart , user}] = useStateValue();
@@ -22,7 +23,7 @@ function Header() {
           <Link to="/">
           <img 
               className= "header__logo" 
-              src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" 
+              src="goshop.png" 
               alt =" " />    
           
           </Link>
@@ -56,7 +57,7 @@ function Header() {
               <Link to= "/"className= "header__link">
                   <div className="header__option">
                       <span className="header__optionLineOne">Your</span>
-                      <span className="header__optionLineTwo">Prime</span>
+                      <span className="header__optionLineTwo">Profile</span>
                   </div>
               </Link>
   
@@ -75,5 +76,5 @@ function Header() {
       </nav>
     )
   }
-  
+
   export default Header

@@ -12,7 +12,7 @@
 {
     width: 100px;
     object-fit: contain;
-    margin-top: 18px;
+    margin-top: 10px;
     margin-left: 10px;
     margin-right: 12px;
 }
@@ -68,5 +68,5 @@
 {
     padding: 5px;
     height: 22px !important;
-    background-color: #cd9042;
+    background-color: #1EB100;
 }
